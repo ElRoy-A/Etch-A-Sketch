@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch - The Odin Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Etch A Sketch&#174;</h1>
+        <div class="wrapper">
+            <div class="options-left">
+                <button id="black">Black</button>
+                <button id="RGB">Colour</button>
+            </div>
+            <div class="container">
+                <div id="grid-container"></div>
+            </div>
+            
+            <div class="options-right">
+                <button id="eraser">Eraser</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="range">
+                <div class="field">
+                    <div class="value">16x16</div>
+                    <input type="range" min="4" max="32" value="16" steps="4">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
