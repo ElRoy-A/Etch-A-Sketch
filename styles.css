@@ -1,0 +1,99 @@
+:root {
+    --grid-columns: 1;
+    --grid-rows: 1;
+
+    --clr-title: rgb(92, 79, 5);
+    --clr-background: rgb(250, 19, 19);
+    --clr-bg: rgb(197, 197, 197);
+    --clr-buttons: rgb(255, 255, 255);
+    --clr-text: rgb(0, 0, 0);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+/* Global Style */
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling of the Etch a Sketch device casing */
+main {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--clr-background);
+    border-radius: 10%;
+    margin-top: 10%;
+    border-style: groove;
+    border: 5px solid rgb(151, 3, 3);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options-left, .options-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#black, #eraser {
+    margin-bottom: 50px;
+}
+
+/* Styling 'Etch a Sketch' title */
+h1 {
+    color: var(--clr-title);
+    padding-top: 1rem; padding-bottom: 1rem;
+    font-size: 4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Styling all buttons */
+button {
+    background-color: var(--clr-buttons);
+    border: 1px solid var(--clr-buttons);
+    margin: 1rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* Stlying: Grid */
+#grid-container {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    background-color: var(--clr-bg);
+}
+  
+.grid-item {
+    text-align: center;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+
+
+.slider-container {
+    margin: 1rem;
+}
+.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.5rem;
+}
